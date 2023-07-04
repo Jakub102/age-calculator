@@ -56,7 +56,7 @@ submit.addEventListener('click', function(){
         FlagOk = 0;
     }
 
-    if(month%2==0 && day>30 && month<=7 || month%2==1 && day>30 && month>7 || day>31 ||(month==2 && year%4==0 && day>29 || month==2 && year%4==1 && day>28)){
+    if(month%2==0 && day>30 && month<=7 || month%2==1 && day>30 && month>7 || day>31 ||(month==2 && year%4==0 && day>29 || month==2 && year%4!=0 && day>28)){
         day_error.innerHTML = "Must be a valid day"
         day_error.classList.add("error");
         day_text_error.classList.add("error");
