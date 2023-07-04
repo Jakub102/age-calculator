@@ -1,0 +1,144 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light_red: hsl(0, 100%, 67%);
+    --off_white: hsl(0, 0%, 94%);
+    --light_grey: hsl(0, 0%, 86%);
+    --smokey_grey: hsl(0, 1%, 44%);
+    --off_black: hsl(0, 0%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--off_white);
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+    border-radius: 50px;
+    border-bottom-right-radius: 25%;
+    padding: 50px;
+    height: 600px;
+    background-color: white;
+}
+
+.date {
+    display: flex;
+    font-weight: 700;
+    color: var(--smokey_grey);
+    margin-right: 20%;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--light_grey)
+}
+
+.date p {
+    margin: 5px 0px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input {
+    font-size: 32px;
+    padding: 12px 20px;
+    width: 80%;
+    -moz-appearance: textfield;
+    border-radius: 10px;
+    border: 1.5px solid var(--light_grey);
+    font-weight: 700;
+    outline: none;
+}
+
+input:focus {
+    border-color: var(--purple);
+}
+
+.submit img {
+    position: absolute;
+    top: 23.5%;
+    left: 75%;
+    background-color: var(--purple);
+    padding: 25px;
+    border-radius: 100%;
+}
+
+.submit img:hover {
+    background-color: var(--off_black);
+    cursor: pointer;
+}
+
+.calculatated_date {
+    margin: 30px 0px;
+    font-size: 90px;
+    color: var(--purple);
+    font-style: italic;
+    font-weight: 900;
+}
+
+.calculatated_date span {
+    color: var(--off_black)
+}
+
+@media only screen and (max-width: 800px) {
+    main {
+        width: 90%;
+        height: 550px;
+    }
+
+    .submit img {
+        position: absolute;
+        left: 40%;
+        top: 160px;
+        padding: 15px;
+    }
+
+    .date {
+        margin-right: 0%;
+        padding-bottom: 75px;
+        justify-content: space-around;
+    }
+
+    .calculatated_date {
+        margin: 90px 0px;
+        font-size: 50px;
+    }
+
+    input { 
+        font-size: 15px;
+        padding: 12px 10px;
+        width: 100%;
+    }
+
+    .month {
+        margin-left: 10%;
+    }
+
+    .year { 
+        margin-left: 10%;
+    }
+
+    .submit_top {
+        top: 35% !important;
+    }
+}
+
+.error {
+    color: red;
+    font-weight: 100;
+}
+
+.input_error {
+    border-color: red;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Age calculator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <main>
+        <div class="date">
+            <div class="day">
+                <p class="day_text_error"> DAY</p>
+                <input type="number" placeholder="DD" id="day">
+                <p class="day_error"> </p>
+            </div>
+            <div class="month">
+                <p class="month_text_error">MONTH</p>
+                <input type="number" placeholder="MM" id="month">
+                <p class="month_error"> </p>
+            </div>
+            <div class="year">
+                <p class="year_text_error">YEAR</p>
+                <input type="number" placeholder="YYYY" id="year"> 
+                <p class="year_error"> </p>
+            </div>
+        </div>
+        <div class="submit">
+            <img src="assets/images/icon-arrow.svg" alt="icon-arrow.svg" id="submit">
+        </div>
+        <div class="calculatated_date">
+            <div class="calculated_year">
+                <p id="calcYear"> -- <span> years </span> </p>
+            </div>
+            <div class="calculated_month">
+                <p id="calcMonth"> -- <span> months </span> </p>
+            </div>
+            <div class="calculated_day">
+                <p id="calcDay"> -- <span> days </span> </p>
+            </div>
+        </div>
+    </main>
+</body>
+ <script src="script.js"></script>
+</html>
